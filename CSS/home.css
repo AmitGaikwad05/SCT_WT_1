@@ -1,0 +1,631 @@
+@import url("global.css");
+
+.body{
+    background-color: rgba(25, 155, 172, 0.516);
+margin: 0;
+padding: 0;
+ height: fit-content;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+
+.fixedKeys a{
+    text-decoration: none;
+    color:rgba(25, 155, 172) ;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: white;
+    width: 200px;
+    margin: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 0px 30px 30px 0px;
+
+}
+
+#fkHome{
+    position: fixed;
+    z-index: 1000;
+left: -160px;
+top: 40vh;
+transition: all 0.2s ease-in-out 0s ;
+}
+
+#fkHome:hover{
+    left: -60px;
+}
+
+    #fkCall{
+        position: fixed;
+        z-index: 1000;
+        left: -160px;
+        top: 46vh;
+        transition: all 0.2s ease-in-out 0s ;
+    }
+
+#fkCall:hover{
+    left: -60px;
+}
+    
+#fkLocation{
+    position: fixed;
+    z-index: 1000;
+    left: -160px;
+    top: 52vh;
+    transition: all 0.2s ease-in-out 0s ;
+}
+
+#fkLocation:hover{
+    left: -60px;
+}
+    
+
+
+.fixedKeys img{
+    margin-left: 20px ;
+}
+
+
+/* ======================= Header ======================== */
+
+.header{
+    width: 100%;
+    height: fit-content;
+    background-color: rgba(55, 160, 173, 0.747);
+    position: fixed;
+    z-index: 999;
+    display: flex;
+align-items: center;
+}
+
+#logo{
+    margin: 15px;
+    width: 65px;
+    transition: all 0.1s ease-in-out 0s;
+}
+
+#logo:hover{
+    transform: scale(1.1);
+    filter: drop-shadow(0px 0px 1px var(--p1-color) ); 
+}
+
+.title{
+    color: white;
+    font-size: 40px;
+    font-weight: 500;
+    /* margin: 20px; */
+}
+
+@media(max-width: 490px){
+
+    .header{
+        justify-content: center;
+    }
+
+    #logo{
+    margin-left: 20px;
+    width: 55px;
+}
+
+    .title{
+    font-size: 30px;
+}
+}
+
+.body ul{
+    display: flex;
+    position: absolute;
+    right: 20px;
+}
+
+.body ul li{
+    list-style: none;
+    margin: 20px;
+    transition: all 0s ease-in-out;
+}
+
+.body ul a{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+    transition: all 0.2s ease-in-out 0s;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.body ul a:hover{
+    color: rgba(0, 170, 196, 0.767);
+    background-color: rgba(255, 255, 255, 0.767);
+    font-weight: 600;
+}
+
+
+
+#sidebar{
+    display: none;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 100vh;
+    width: 400px;
+    background-color: rgba(231, 231, 231, 0.887);
+    padding: 30px;
+
+}
+
+#sidebarCross{
+    background-color: rgba(170, 170, 170, 0.39) ;
+    border-radius: 50px;
+}
+
+#sidebar div{
+    margin-top: 30px;
+    height: 400px;
+    display: flex;
+flex-direction: column;
+}
+
+#sidebar a{
+    border-radius: 6px;
+    padding: 8px;
+    background-color: #ffffff9f;
+    width: 340px;
+    border: 1px solid rgba(55, 160, 173, 0.747) ;
+    margin-top: 30px;
+    list-style: none;
+    text-decoration: none;
+    color: rgba(55, 159, 173, 0.897) ;
+    font-size: 20px;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out 0s;
+}
+
+
+#sidebar a:hover{
+    background-color: rgba(55, 159, 173, 0.897) ;
+color: white;
+}
+
+#navkey{
+    display: none;
+    position: absolute;
+    right: 20px;
+}
+
+@media(max-width: 900px){
+.body .header ul{
+    display: none;
+}
+
+ #navkey{
+    display: block;
+}
+
+}
+
+/* ================== ======= Main ============================ */
+
+.main{
+    width: 100%;
+height: fit-content;
+    background-color: rgb(205, 205, 205);
+}
+
+.mainChild{
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* --------------------- Main child 01 ----------------------- */
+
+#description{
+    background-image: url("../img/Background/bg01.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* filter: blur(4px); */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    min-height: 100vh;
+    padding-top: 60px ;
+}
+
+.mSubChild{
+    width: 600px;
+    height: 400px;
+    padding: 40px;
+    border-radius: 4px;
+    margin: 20px;
+}
+
+#msc0101{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    order: 1;
+}
+
+#msc0101 h1{
+    color: rgba(0, 170, 196, 0.767);
+    font-size: 40px;
+    margin: 10px;
+}
+
+#msc0101 p{
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    font-weight: 500;
+
+}
+
+.mscc{
+    width: fit-content;
+    height: fit-content;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactDivs{
+    width: fit-content;
+    height: fit-content;
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactDivs a{
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    width: fit-content;
+    font-size: 20px;
+    color: white;
+    background-color: rgba(0, 170, 196, 0.767);
+    border-radius: 100px;
+    transition: all 0.1s ease-in-out 0s;
+}
+
+.contactDivs a:hover{
+font-weight: 500;
+    color: rgba(0, 170, 196, 0.767);
+    background-color: rgba(238, 238, 238, 0.767);
+    transform: scale(1.1);
+    border: 2px solid rgba(25, 155, 172, 0.516);
+}
+
+#msc0102{
+    text-align: right;
+    background-color: rgba(25, 155, 172, 0.61);
+    order: 2;
+    transition: all 0.3s ease-in-out 0s;
+    border-radius: 15px;
+    height: fit-content;
+    margin: 20px;
+}
+
+#msc0102:hover{
+    transform: scale(1.1);
+}
+
+#msc0102 h1, h3{
+margin-bottom: 10px;
+color: white;
+}
+
+#msc0102 h1{
+    font-size: 40px;
+}
+
+#msc0102 p{
+    color: rgb(238, 237, 237);
+    font-size: 18px;
+    margin-top: 40px;
+    font-weight: 400;
+}
+
+/* --------------------- Main child 02 (Treatments) ----------------------- */
+
+#treatments{
+    background-image: url(../img/Background/bg02.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    min-height: 100vh;
+}
+
+#msc0201{
+    font-size: 30px;
+    font-weight: 500;
+    padding: 10px;
+    color:rgba(0, 170, 196, 0.767) ;
+    background-color: rgba(255, 255, 255, 0.616);
+    border-radius: 15px;
+margin: 10px;
+}
+
+/* --------- treatments container --------- */
+
+
+#msc0202{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #b4dbdd48;
+    min-height: 600px;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 1500px;
+    margin: 10px;
+}
+
+.treat_child {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    background-color: #1596a7ab;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    width: 250px;
+    min-height: 350px;
+    transition: all 0.2s ease-in-out 0s;    
+    
+}
+
+.treat_child:hover{
+    background-color: rgba(255, 255, 255, 0.438);
+}
+
+
+.t_image{
+    margin: 12px;
+}
+
+.treat_child h3{
+    font-size: 22px;
+    margin: 10px;
+}
+
+.treat_child p {
+    font-size: 18px;
+}
+/* --------------------- Main child 03 (Doctor's message) ----------------------- */
+
+#doctorMessage{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #036bb2;
+    background-image: url(../img/Background/bg03.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 100px;
+    min-height: 100vh;
+}
+
+#msc0301 p{
+    margin: 10px;
+    padding: 10px;
+    font-size: 30px;
+    font-weight: 500;
+    padding: 10px;
+    color:rgba(0, 170, 196, 0.767) ;
+    background-color: rgba(255, 255, 255, 0.616);
+    border-radius: 15px;
+}
+
+#msc0302{
+    border-radius: 30px;
+    /* background-color: rgba(216, 216, 216, 0.753); */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    padding: 20px;
+}
+
+#d_image{
+    margin: 10px;
+    /* background-color: #ff006a; */
+    width: 320px;
+    height: 490px;
+    background-image: url("../img/Dr.anuja_profile.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 4px;
+}
+
+#d_quote{
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    margin: 30px;
+    font-size: 24px;
+    background-color: #1d9094a8;
+    max-width: 600px;
+    min-height: 300px;
+    padding: 20px;
+  }
+  
+  #d_certificate{
+      border-radius: 5px;
+      background-image: url("../img/dr_certificate.jpg");
+      margin: 10px;
+      /* background-color: #ff006a; */
+      width: 300px;
+      height: 220px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      
+    }
+    
+    
+    /* --------------------- Main child 04 (Contact) ----------------------- */
+    
+#contactDiv{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #036bb2;
+    background-image: url(../img/Background/bg04.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 100px;
+    min-height: 100vh;
+}
+
+    #msc0401 p{
+        margin: 10px;
+        padding: 10px;
+        font-size: 30px;
+        font-weight: 500;
+        padding: 10px;
+        color:rgba(0, 170, 196, 0.767) ;
+        background-color: rgba(255, 255, 255, 0.616);
+        border-radius: 15px;
+    }
+
+#msc0402{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: fit-content;
+    padding: 20px;
+    margin: 10px;
+    height: fit-content;
+
+}
+
+#msc0402 iframe{
+    max-width: 1200px;
+    min-height: 600px;
+    border-radius: 20px;
+    margin: 40px;
+    /* border: 2px solid rgb(226, 38, 38); */
+}
+
+@media(max-width: 920px){
+    
+    #msc0402 iframe{
+        max-width: 350px;
+        min-height: 600px;
+        border-radius: 20px;
+    
+        /* border: 2px solid rgb(226, 38, 38); */
+    }
+}
+    
+#contactNos{
+    display: flex;
+flex-direction: column;
+align-items: center;
+min-width: 350px;
+background-color: rgba(47, 111, 122, 0.788);
+min-height: 600px;
+margin: 40px;
+border-radius: 10px;
+}
+
+#contactNos h3{
+    color: rgba(0, 170, 196, 0.767);
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 28px;
+padding: 10px;
+background-color: white;
+    margin: 40px;
+}
+
+#contactNos p{
+    margin: 10px;
+    padding: 10px;
+    font-size: 22px;
+}
+
+#contactNos a{
+    text-decoration: none;
+    font-size: 28px;
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+    color: rgb(13, 196, 13);
+    border: 2px solid rgb(13, 196, 13);
+    transition: all 0.2s ease-in-out 0s;
+    border-radius: 15px;
+}
+
+#contactNos a:hover{
+    background-color: rgb(46, 207, 46);
+    border : 2px solid rgb(46, 207, 46);
+    color: white;
+}
+    /* ========================= Footer ============================ */
+    
+.footer{
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(48, 48, 48);
+}
+
+.footerDivs{
+    margin: 20px;
+}
+
+.footerDivs a{
+    text-decoration: none;
+    font-weight: 500;
+}
+
+
+#fChild2{
+    width: 250px;
+    height: 50px;
+    /* background-color: burlywood; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  #fChild2 img{
+    /* filter: grayscale(1); */
+    filter: saturate(0) opacity(0.5);
+    transition: all 0.15s ease-in-out 0ms;
+  }
+  
+  #fChild2 img:hover{
+    filter: saturate(1) opacity(1);
+    transform: scale(1.1);
+  }
